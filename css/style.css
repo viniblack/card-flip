@@ -2,6 +2,10 @@ body {
   background-color: #F1F7F9;
 }
 
+.modo-card {
+  margin-bottom: 6rem;
+}
+
 .modo-card-header {
   background-color: white;
   border-radius: 1rem 1rem 0 0;
@@ -17,15 +21,29 @@ body {
 
 }
 
-.test{
-  overflow: scroll ;
-  max-height: 17rem;
+.modo-card-text {
+  line-height: 1.4;
+}
+
+.test {
+  overflow: scroll;
+  max-height: 12rem;
   overflow-x: hidden;
 }
 
 .modo-card-body-title {
   color: #0081C5;
   font-weight: 800;
+}
+
+.modo-card-body-back{
+  border-radius: 1rem 1rem 0 0;
+
+}
+
+.modo-card-body {
+  padding-top: 2rem;
+
 }
 
 .modo-card-body p {
@@ -39,6 +57,8 @@ body {
 .modo-card-footer-btn-back {
   background-color: #0081C5;
   color: white;
+  border-radius: 0 0 1rem 1rem !important;
+
 }
 
 
@@ -51,7 +71,7 @@ body {
 
 .flip-card-inner {
   position: relative;
-  width: 100%;
+  width: 21rem;
   height: 100%;
   text-align: center;
   transition: transform .7s;
@@ -67,8 +87,8 @@ body {
   backface-visibility: hidden;
 }
 
-.flip-card-front {
-}
+/* .flip-card-front {
+} */
 
 .flip-card-back {
   transform: rotateY(180deg);
