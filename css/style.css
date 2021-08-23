@@ -2,6 +2,22 @@ body {
   background-color: #F1F7F9;
 }
 
+div::-webkit-scrollbar {
+  width: .25rem;
+}
+
+
+div::-webkit-scrollbar-track {
+  background: #DDDDDD;
+  /* color of the tracking area */
+}
+
+div::-webkit-scrollbar-thumb {
+  background-color: #777777;
+  border-radius: 20px;
+}
+
+
 .modo-card {
   margin-bottom: 6rem;
 }
@@ -12,6 +28,7 @@ body {
 }
 
 .modo-card-header-icon {
+  width: 6rem;
   background-color: white;
 
 }
@@ -23,22 +40,28 @@ body {
 
 .modo-card-text {
   line-height: 1.4;
+  height: 7rem;
 }
 
-.test {
+.modo-card-back-text {
   overflow: scroll;
-  max-height: 12rem;
+  max-height: 14rem;
   overflow-x: hidden;
 }
 
-.modo-card-body-title {
+.modo-card-back-body-title {
   color: #0081C5;
   font-weight: 800;
 }
 
-.modo-card-body-back{
+.modo-card-back-body {
   border-radius: 1rem 1rem 0 0;
 
+}
+
+.modo-card-body-title {
+  color: #0081C5;
+  font-weight: 700;
 }
 
 .modo-card-body {
@@ -58,7 +81,7 @@ body {
   background-color: #0081C5;
   color: white;
   border-radius: 0 0 1rem 1rem !important;
-
+  cursor: pointer;
 }
 
 
@@ -87,9 +110,14 @@ body {
   backface-visibility: hidden;
 }
 
-/* .flip-card-front {
-} */
+.flip {
+  transform: rotateY(180deg);
+}
+
+.no-flip {
+  transform: rotateY(0deg) !important;
+}
 
 .flip-card-back {
-  transform: rotateY(180deg);
+  transform: rotateY(180deg) !important;
 }
